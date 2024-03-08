@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@100;400;500&family=Gowun+Dodum&display=swap');
+
+body{
+    margin: 0%;
+    color: black;
+    font-family: 'Asap', sans-serif;
+    overflow-x: hidden;
+    margin-top: 70px;
+    padding-top: 70px;
+}
+
+
+/* navbar css start */
+.shark_nav_logo{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+}
+.navbar{
+    background-color: transparent !important;
+    text-align: right;
+    justify-content: right;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.397); 
+    /* position: fixed !important;  */
+    top: 0;
+    position: fixed !important;
+    }
+
+.navbar-nav .nav-item .nav-link {
+    color: #000000 ; 
+  }
+.navbar-nav .nav-item .nav-link:hover{
+    border-bottom: 1px solid black;
+}
+.shark_contact_link{
+    color: rgb(95, 95, 95) !important;
+    border-radius: 8px;
+    background-color: #dbdbdb !important;
+}
+.shark_contact_link:hover{
+    background-color: #a8a8a8 !important;
+    color: black !important;
+}
+@media(max-width:992px){
+    .shark_contact_link{
+        color: rgb(0, 0, 0) !important;
+        background-color: transparent !important;
+    }
+    .shark_contact_link:hover{
+        color: black !important;
+        background-color: transparent !important;
+
+    }
+}
+
+
+/* navbar css end */
+.shark_container{
+    position: relative;
+    z-index: 1;
+}
+.shark_slogan{
+    font-size: 25px;
+    color: rgb(87, 87, 87);
+}
+.shark_slogan span{
+    font-weight: bold;
+    color: black;
+    font-style: italic;
+
+}
+.shark_landing_page{
+    text-align: center;
+    margin:50px 0;
+}
+.shark_icons img:hover{
+    transform: scale(1.2);
+    filter: invert(50%);
+
+}
+.shark_pdf_link{
+    border-radius: 50px;
+    border: 2px solid black;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+}
+.shark_pdf_link:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+.shark_services h1{
+text-align: center;
+}
+
+.shark_services_container{
+    margin: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.shark_service1 img{
+    width: 80px;
+    padding-bottom: 10px;
+    transition: ease-in-out  0.9s;
+}
+.shark_service1{
+    width: 300px;
+    margin-top: 30px;
+    border: 1px solid grey;
+    padding: 15px;
+    border-radius: 8px;
+    height: 340px;
+    background-color: white ;
+    transition: ease-in-out  0.9s;
+}
+.shark_service1 a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: ease-in-out  0.9s;
+
+}
+.shark_service1:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 8px rgb(183, 183, 183);
+}
+.shark_service1:hover img{
+    filter: invert(100%);
+}
+.shark_service1:hover a{
+    color: white;
+}
+.shark_about{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+.shark_about h1{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.shark_skills_web_icons svg{
+    width: 35px;
+}
+.shark_skills h1{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.shark_skills_web{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.shark_skills_web_icons {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px;
+}
+.shark_skills_graphic{
+    text-align: center;
+    /* width: 100%; */
+}
+.shark_skills_container{
+    padding: 20px;
+}
+
+
+@media(max-width:424px){
+    .shark_services p{
+        font-size: 14px;
+    }
+}
+
+
+
+/* form css start */
+/* Style for form container */
+.shark_contact{
+    padding: 30px;
+}
+.shark_contact h1{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#my-form {
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+  
+  /* Style for form labels */
+  #my-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for form inputs */
+  #my-form input[type="text"],
+  #my-form input[type="email"],
+  #my-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #7e7e7e;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border included in width */
+  }
+  
+  /* Style for form button */
+  #my-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000; /* Adjust button color as needed */
+    color: #ffffff;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Style for form status message */
+  #my-form-status {
+    margin-top: 15px;
+    color: #007bff; /* Adjust status message color as needed */
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    #my-form {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  }
+  
+/* form css end */
+
+
+/* progressbar styling start*/
+
+.shark_progress h4{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.shark_progress_container{
+    margin: 0 auto;
+    width: 45%;
+    background-color: #7e7e7e00;
+    padding: 10px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.progress{
+    margin-bottom: 10px;
+}
+.progress-bar {
+    background-color: black !important;
+    color: white;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .progress-bar {
+      width: 900px;
+    }
+  }
+
+
+@media(max-width:430px){
+    .shark_progress_container{
+        width: 70%;
+    }
+}
+@media(max-width:376px){
+    .shark_progress_container{
+        width: 90%;
+    }
+}
+
+/* animated background css start */
+canvas {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/* animated background css end */
+
+/* progressbar styling end*/
+
+/* body general styling end*/
+
+
+/* Scrollbar Start */
+::-webkit-scrollbar {
+    height: 3px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #c5c5c5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #51c8f7;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c9c9c9;
+}
+/* Scrollbar End */
+
+
+/* footer css start */
+.footer {
+    position: relative;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+ 
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  .social-icon{
+    padding: 0;
+  }
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+    /* filter: grayscale(100%); */
+    filter: brightness(0%);
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+
+/* footer css end */
+
+
+
+
+
+
+
+
+
+
+
+/* back to top btn css start */
+  #myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px;
+    right: 10px; 
+    z-index: 99; 
+    border: 1px solid black;
+    outline: none; 
+    background-color: rgba(0, 0, 0, 0.322); 
+    color: white; 
+    cursor: pointer; 
+    /* padding: 5px;  */
+    border-radius: 50px; 
+    font-size: 18px; 
+  }
+  
+  #myBtn:hover {
+    background-color: #555; 
+  }
+  @media (max-width: 768px) {
+    #myBtn {
+        display: block; /* Show the button on small devices */
+    }
+}
+/* back to top btn css end */
+
+
+@media only screen and (max-width: 366px) {
+    .shark_proj_display {
+        font-size: 10px; /* Adjusted font size for small devices */
+    }
+}
+
+@media only screen and (max-width: 334px) {
+    .shark_service1 p{
+        font-size: 10px; /* Adjusted font size for small devices */
+    }
+}
