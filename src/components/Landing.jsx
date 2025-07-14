@@ -1,9 +1,16 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import profilePic from "../assets/profilepic.jpeg"
+import { motion } from 'framer-motion';
 function Landing () {
     return(
         <>
-        <div className='landing-container'>
+        <motion.div
+          className='landing-container'
+          initial={{ opacity: 0, y: 60, scale: 0.98 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
         <div className="landing-details">
             <img src={profilePic} />
             <h3 className='colored-title'>Ahmad Sharkawi</h3>
@@ -22,7 +29,7 @@ function Landing () {
 </p>
 <hr/>
         </div>
-        </div>
+        </motion.div>
         </>
     )
 }

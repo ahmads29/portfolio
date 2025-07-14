@@ -4,6 +4,7 @@
     padding: 2rem;
     text-align: center;
     padding-top: 180px !important;
+    overflow-x: hidden;
 }
 
 .logo {

@@ -664,21 +664,51 @@ button:focus-visible {
     }
 }
 
-.footer-social a {
-    color: white;
-    margin-left: 20px;
-    transition: color 0.4s ease, filter 0.4s ease;
-    filter: drop-shadow(0 0 2px rgba(106, 130, 251, 0.4));
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
-.footer-social a:first-child {
-    margin-left: 0;
+.footer-social-label {
+    font-size: 0.92em;
+    color: #a5accc;
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    transition: background 0.2s, transform 0.18s;
+    color: #fff;
+    font-size: 1.2em;
+    box-shadow: 0 2px 8px #6a82fb22;
 }
 
 .footer-social a:hover {
-    color: #6a82fb;
-    filter: drop-shadow(0 0 8px #6a82fb);
-    transform: scale(1.15);
+    background: linear-gradient(90deg, #6a82fb 60%, #ff7eb3 100%);
+    color: #fff;
+    transform: scale(1.12);
+}
+
+.footer-social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 4px;
+}
+
+/* Remove .footer-top-btn styles if not used elsewhere */
+.footer-top-btn {
+    display: none !important;
 }
 
 .footer-bottom {
@@ -817,5 +847,66 @@ hr {
 
     .nav-btn .nav-icon {
         font-size: 0.95em;
+    }
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 160px;
+}
+
+.footer-location {
+    font-size: 1em;
+    color: #a5accc;
+    margin-bottom: 2px;
+}
+
+.footer-email {
+    color: #6a82fb;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.footer-email:hover {
+    color: #ff7eb3;
+    text-decoration: underline;
+}
+
+.footer-social-label {
+    font-size: 0.95em;
+    color: #a5accc;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+.footer-divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #8fadff 0%, white 50%, #daff8f 100%);
+    width: 100%;
+    border-radius: 2px;
+    opacity: 0.7;
+    margin: 18px 0 0 0;
+}
+
+@media (max-width: 700px) {
+    .footer-content {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 18px !important;
+    }
+
+    .footer-col {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .footer-top-btn {
+        width: 100%;
+        margin-top: 12px;
     }
 }

@@ -1,8 +1,13 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
 export default function ProjectCard({ project }) {
   return (
-    <div className="project-item">
+    <motion.div
+      className="project-item"
+      whileHover={{ scale: 1.04, boxShadow: '0 8px 32px #6a82fb33', y: -6 }}
+      transition={{ type: 'spring', stiffness: 260, damping: 18 }}
+    >
       <img src={project.img} alt={project.title} />
       <div className="project-details">
         <p>{project.date}</p>
@@ -16,6 +21,6 @@ export default function ProjectCard({ project }) {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
