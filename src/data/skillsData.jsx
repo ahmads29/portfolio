@@ -103,10 +103,6 @@ export const skills = [{
         icon: < FaDatabase / >
     },
     {
-        name: "APIs & REST APIs",
-        icon: < SiApollographql / >
-    },
-    {
         name: "Postman",
         icon: < SiPostman / >
     },
@@ -149,5 +145,9 @@ export const skills = [{
     {
         name: "Figma",
         icon: < FaFigma / >
-    }
+    },
+    {
+        name: "APIs & REST APIs",
+        icon: < SiApollographql / >
+    },
 ];
