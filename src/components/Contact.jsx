@@ -32,7 +32,7 @@ function ContactForm() {
 
         <div className="two-columns">
           <div>
-            <label>Country Code (e.g. +961)</label>
+            <label>Country Code</label>
             <input type="text" name="countryCode" placeholder="+XXX" />
           </div>
           <div>

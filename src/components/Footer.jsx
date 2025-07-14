@@ -14,7 +14,7 @@ export default function Footer() {
 
         <div className="footer-social">
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/ahmad-sharkawi-a966152aa/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -22,7 +22,7 @@ export default function Footer() {
             <FaLinkedin size={28} />
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/ahmads29"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
