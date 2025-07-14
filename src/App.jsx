@@ -6,11 +6,15 @@ import ProjectsHomeSection from './components/ProjectsHomeSection';
 import ProjectsPage from './components/ProjectsPage';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+// import cAnimation from './components/cAnimation';
+import CircleAnimation from './components/CircleAnimation';
+
 
 function Home() {
   return (
     <>
       <Landing />
+      <CircleAnimation />
       <Skills />
       <ProjectsHomeSection />
       <Contact />

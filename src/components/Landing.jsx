@@ -4,11 +4,9 @@ function Landing () {
     return(
         <>
         <div className='landing-container'>
-        <div className="blur-circle circle1"></div>
-        <div className="blur-circle circle2"></div>
         <div className="landing-details">
             <img src={profilePic} />
-            <h3>Ahmad Sharkawi</h3>
+            <h3 className='colored-title'>Ahmad Sharkawi</h3>
             <p>Software Engineer with a strong passion for technology and innovation</p>
             <div className='landing-btns'>
             <a href="">Resume</a>
@@ -19,7 +17,7 @@ function Landing () {
         <FaLinkedin size={24} />
       </a>
             </div>
-            <p>Computer Engineering student at Beirut Arab University (BAU) with a strong focus on React, Next.js, and the MERN stack. Skilled in Laravel, MySQL, MongoDB, and a WordPress expert. Passionate about building scalable web applications and delivering optimized solutions across technologies.
+            <p className='p-class'>Computer Engineering student at Beirut Arab University (BAU) with a strong focus on React, Next.js, and the MERN stack. Skilled in Laravel, MySQL, MongoDB, and a WordPress expert. Passionate about building scalable web applications and delivering optimized solutions across technologies.
 
 </p>
 <hr/>

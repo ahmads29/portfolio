@@ -104,7 +104,7 @@ button:focus-visible {
 }
 
 .landing-details {
-    width: 50%;
+    width: 4cap;
     margin: 0 auto;
     text-align: left !important;
 }
@@ -129,7 +129,7 @@ button:focus-visible {
     border-radius: 50%;
     filter: blur(120px);
     opacity: 0.5;
-    z-index: 0;
+    z-index: -5;
     animation: float 12s infinite ease-in-out alternate;
 }
 
@@ -137,12 +137,15 @@ button:focus-visible {
     top: 10%;
     left: 15%;
     background: radial-gradient(circle, #ff7eb3, #ff758c);
+    z-index: -5;
 }
 
 .circle2 {
     bottom: 15%;
     right: 20%;
     background: radial-gradient(circle, #6a82fb, #fc5c7d);
+    z-index: -5;
+
 }
 
 @keyframes float {
@@ -177,7 +180,7 @@ button:focus-visible {
 }
 
 .skills-main-container {
-    width: 50%;
+    width: 4cap;
     margin: 0 auto;
     text-align: left;
 }
@@ -193,7 +196,7 @@ button:focus-visible {
     align-items: center;
     flex-direction: column;
     z-index: 1;
-    width: 50%;
+    width: 4cap;
     margin: 0 auto;
 }
 
@@ -224,7 +227,7 @@ button:focus-visible {
     /* slightly smaller text */
     display: flex;
     align-items: center;
-    padding: 10px;
+    /* padding: 10px; */
 
 }
 
@@ -291,7 +294,7 @@ button:focus-visible {
     backdrop-filter: blur(15px);
     background: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 /* Gradient title */
@@ -352,6 +355,7 @@ button:focus-visible {
     transition: filter 0.3s;
     /* border: 1px solid white */
     margin-bottom: 50px;
+    font-size: 14px;
 }
 
 .btn.view-all-btn:hover {
@@ -404,7 +408,7 @@ button:focus-visible {
 }
 
 .home-projects-section {
-    width: 50%;
+    width: 4cap;
     margin: 0 auto;
 }
 
@@ -435,9 +439,19 @@ button:focus-visible {
     }
 
     .contact-main-container {
-        width: 100%;
+        width: 100% !important;
+    }
+
+    .skills-container {
+        justify-content: left;
+    }
+
+    .colored-title {
+        font-size: 1rem !important;
     }
 }
+
+
 
 
 .contact-form-wrapper {
@@ -452,10 +466,11 @@ button:focus-visible {
     overflow: hidden;
     z-index: 1;
     color: white;
+    font-size: 12px;
 }
 
 .contact-main-container {
-    width: 50%;
+    width: 4cap;
     margin: 0 auto;
 }
 
@@ -678,7 +693,7 @@ button:focus-visible {
 
 
 .colored-title {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
     background: linear-gradient(90deg, #ff7eb3, #6a82fb);
     -webkit-background-clip: text;
@@ -688,4 +703,20 @@ button:focus-visible {
     color: transparent;
     user-select: none;
     text-align: left;
+}
+
+.landing-details,
+.projects-wrapper,
+.skills-main-container,
+.contact-main-container {
+    z-index: 100;
+}
+
+.p-class {
+    font-size: 14px;
+    color: rgb(172, 172, 172);
+}
+
+.project-details h3 {
+    font-size: 12px;
 }
