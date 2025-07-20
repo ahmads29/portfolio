@@ -17,7 +17,7 @@ function Landing () {
             <p>Software Engineer with a strong passion for technology and innovation</p>
             <div className='landing-btns'>
             <a href="https://drive.google.com/file/d/1Bo1cDASIIfSm2HS31GmgbwxxB6GbrFWm/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
-        <a href="https://www.linkedin.com/in/ahmad-sharkawi-a966152aa/" target="_blank" rel="noopener noreferrer" className='social-icon'>
+        <a href="https://www.linkedin.com/in/ahmadsharkawi/" target="_blank" rel="noopener noreferrer" className='social-icon'>
         <FaLinkedin size={24} />
       </a>
       <a href="https://github.com/ahmads29" target="_blank" rel="noopener noreferrer" className='social-icon'> 
