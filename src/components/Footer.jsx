@@ -16,7 +16,7 @@ export default function Footer() {
           <span className="footer-social-label">Connect:</span>
           <div className="footer-social-icons">
             <a
-              href="https://www.linkedin.com/in/ahmad-sharkawi-a966152aa/"
+              href="https://www.linkedin.com/in/ahmadsharkawi"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"

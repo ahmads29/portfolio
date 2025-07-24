@@ -10,9 +10,11 @@ import Footer from './components/Footer';
 import BottomNav from './components/BottomNav';
 // import cAnimation from './components/cAnimation';
 import CircleAnimation from './components/CircleAnimation';
+import ScrollVelocity from './components/ScrollVelocity';
 
 
 function Home() {
+  const velocity = 50; 
   return (
     <>
       <Landing />
@@ -20,6 +22,13 @@ function Home() {
       <Skills />
       <ProjectsHomeSection />
       <Contact />
+      <br/>
+      <br/>
+      <ScrollVelocity
+        texts={['Ahmad Sharkawi', 'Software Engineer']} 
+        velocity={velocity} 
+        className="custom-scroll-text"
+      />
     </>
   );
 }

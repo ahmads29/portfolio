@@ -1,6 +1,12 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import profilePic from "../assets/profilepic.jpeg"
 import { motion } from 'framer-motion';
+import ShinyText from './ShinyText';
+import TrueFocus from './TrueFocus';
+
+
+
+
 function Landing () {
     return(
         <>
@@ -13,8 +19,21 @@ function Landing () {
         >
         <div className="landing-details">
             <img src={profilePic} />
-            <h3 className='colored-title'>Ahmad Sharkawi</h3>
-            <p>Software Engineer with a strong passion for technology and innovation</p>
+            <br/>
+            {/* <h3 className='colored-title'>Ahmad Sharkawi</h3> */}
+            <ShinyText text="Ahmad Sharkawi" disabled={false} speed={3} className='custom-class' />
+            <br/>
+            <br/>
+            <TrueFocus 
+              sentence="Software Engineer"
+              manualMode={false}
+              blurAmount={5}
+              borderColor="#4f79c0"
+              animationDuration={2}
+              pauseBetweenAnimations={1}
+            />
+            
+            <p>With a strong passion for technology and innovation</p>
             <div className='landing-btns'>
             <a href="https://drive.google.com/file/d/1Bo1cDASIIfSm2HS31GmgbwxxB6GbrFWm/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="https://www.linkedin.com/in/ahmadsharkawi/" target="_blank" rel="noopener noreferrer" className='social-icon'>
