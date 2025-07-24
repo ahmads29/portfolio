@@ -11,12 +11,14 @@ import BottomNav from './components/BottomNav';
 // import cAnimation from './components/cAnimation';
 import CircleAnimation from './components/CircleAnimation';
 import ScrollVelocity from './components/ScrollVelocity';
+import CustomCursor from "./components/CustomCursor";
 
 
 function Home() {
   const velocity = 50; 
   return (
     <>
+      <CustomCursor />
       <Landing />
       <CircleAnimation />
       <Skills />

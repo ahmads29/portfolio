@@ -1,0 +1,27 @@
+body {
+    cursor: none;
+}
+
+.cursor-outer,
+.cursor-inner {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+}
+
+.cursor-outer {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #9186d0;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.cursor-inner {
+    width: 6px;
+    height: 6px;
+    background-color: #7661ee;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
