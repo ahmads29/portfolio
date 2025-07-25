@@ -9,7 +9,7 @@ const navItems = [
   { to: '/', label: 'Home', icon: <FaHome /> },
   { to: '/projects', label: 'Projects', icon: <FaFolderOpen /> },
   // Update the 'to' value below to your actual resume PDF path or external link
-  { to: 'https://drive.google.com/file/d/1Bo1cDASIIfSm2HS31GmgbwxxB6GbrFWm/view?usp=sharing', label: 'Resume', icon: <FaFileAlt />, external: true },
+  { to: 'https://drive.google.com/file/d/1ib0cpjlmz7MbjypAdYle-jyIVkn1m06q/view?usp=drive_link', label: 'Resume', icon: <FaFileAlt />, external: true },
 ];
 
 export default function BottomNav() {
