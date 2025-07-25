@@ -35,7 +35,7 @@ function Landing () {
             
             <p>With a strong passion for technology and innovation</p>
             <div className='landing-btns'>
-            <a href="https://drive.google.com/file/d/1xkQ-A8J7s6AxBgyDSfWyYFa36yYNBi4Z/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="https://drive.google.com/file/d/1ib0cpjlmz7MbjypAdYle-jyIVkn1m06q/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="https://www.linkedin.com/in/ahmadsharkawi/" target="_blank" rel="noopener noreferrer" className='social-icon'>
         <FaLinkedin size={24} />
       </a>
